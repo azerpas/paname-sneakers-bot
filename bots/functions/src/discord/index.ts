@@ -27,7 +27,7 @@ export const sendEntrySuccess = async (props: DiscordProps) => {
     const { website, size, url, customWebhook, productName, thumbnail, email } = props;
     functions.logger.log("Custom webhook")
     functions.logger.log(customWebhook)
-    const webhook = customWebhook || functions.config().webhooks.entry || "https://discord.com/api/webhooks/691782722141683787/4pOjfosX2Jy2DqRs4lMLK6qRzGke8zwtGb2tAd-yEoUf3w564Cg_Noaiz-PaATshzQGY";
+    const webhook = customWebhook || functions.config().webhooks.entry || "https://discord.com/api/webhooks/691782722";
     functions.logger.log(`Webhook: ${webhook}`)
     const data = {
         "content": null,
@@ -67,7 +67,7 @@ export const sendEntrySuccess = async (props: DiscordProps) => {
 
 export const sendError = async (props: DiscordErrorProps) => {
     const { website, size, url, customWebhook, email } = props;
-    const webhook = functions.config().webhooks.error || "https://discord.com/api/webhooks/811375216248619038/W4ZwV0RtMe9XinDWHHobDCgKLicS6CJMZMZmhStjsuOCD5pU-44WkVHDR8oEVBPp7_iV";
+    const webhook = functions.config().webhooks.error || "https://discord.com/api/webhooks/811375216248";
     const webhook2 = customWebhook || undefined;
     const data = {
         "content": null,
