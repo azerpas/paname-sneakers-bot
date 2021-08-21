@@ -1,0 +1,12 @@
+{
+    "proxy": {
+      "address": "http://username:password@zproxy.lum-superproxy.io:22225"
+    },
+    "captcha": {
+      "anti": "dzifinef",
+      "twocap": "fozief"
+    },
+    "webhooks": {
+      "entry": "https://discord.com/api/webhooks/69178/4pOjfosX2Jy2DqRs4"
+    }
+}

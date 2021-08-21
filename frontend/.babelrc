@@ -1,0 +1,48 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./src/components",
+          "@api": "./src/api",
+          "@models": "./src/models",
+          "@connectors": "./src/connectors",
+          "@entity": "./src/entity",
+          "@screens": "./src/screens",
+          "@hooks": "./src/hooks",
+          "@services": "./src/services",
+          "@validation": "./src/validation",
+          "@constants": "./src/constants",
+          "@context": "./src/context",
+          "@queries": "./src/queries",
+          "@data": "./src/data",
+          "@typeDefs": "./src/types",
+          "@generated": "./src/generated",
+          "@utils": "./src/utils"
+        }
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ],
+    "babel-plugin-transform-typescript-metadata",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}

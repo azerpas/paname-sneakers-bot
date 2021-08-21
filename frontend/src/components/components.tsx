@@ -1,0 +1,9 @@
+export const blue = "#94A1B2";
+export const corail = "#fc633e";
+export const darkBackground = "#16161A";
+export const darkBlue = "#005AD5";
+export const darkGrey = "#242629";
+export const greenPaname = "#2BAEB3";
+export const lightGrey = "#424242";
+export const white = "#F7F7F7";
+export const red = "#FF4500";

@@ -1,0 +1,1 @@
+export const RECAPTCHA_ENDPOINT = "https://www.google.com/recaptcha/api/siteverify";

@@ -1,0 +1,55 @@
+type User {
+    id: ID!
+    email: String!
+    password: String!
+    tasks(number: Int, offset: Int): [Task]
+    profiles(number: Int, offset: Int): [Profile]
+}
+
+type Task {
+    id: ID!
+    website: String!
+    url: String!
+    size: String
+    Profile: Profile
+}
+
+type Profile {
+    id: ID!
+    fname: String
+    lname: String
+    email: String!
+    address: String
+    zip: String
+    city: String
+    country: String
+}
+
+type Key {
+    id: ID!
+    type: KeyType,
+    uuid: String
+}
+
+enum KeyType { 
+    alpha, beta, free, giveaway
+}
+
+type Query {
+    me: User!
+    task(id: ID!): Task
+    profile(id: ID!): Profile
+    profiles: [Profile]
+    key: String
+    keyValid(uuid: String!): Boolean
+}
+
+type Mutation {
+    launchTasks(tasks: [ID]!): TaskReponse!
+}
+
+type TaskReponse {
+    success: Boolean
+    message: String!
+    errors: [Task]
+}

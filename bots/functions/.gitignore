@@ -1,0 +1,14 @@
+## Compiled JavaScript files
+**/*.js
+**/*.js.map
+!jest.config.js
+!babel.config.js
+
+# Typescript v1 declaration files
+typings/
+
+node_modules/
+
+.DS_Store
+
+.runtimeconfig.json
