@@ -4,9 +4,9 @@
 ### 💻  Emulate functions locally 
 - `cd functions && npm run serve`
 ### 📡 Deploy to Firebase Functions
-- `firebase deploy --only functions --project paname-next`
+- `firebase deploy --only functions`
 ### Set-up .env
-- `firebase functions:config:set proxy.address [proxy-adress] --project paname-next`      
+- `firebase functions:config:set proxy.address [proxy-adress]`      
 *proxy-address format:* `http://{username}:{password}@{hostname/ip}:{port}`
 #### Others values to set
 - `webhooks.entry`
