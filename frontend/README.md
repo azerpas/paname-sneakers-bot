@@ -1,26 +1,19 @@
 # Paname-Next
 
-Based on [NextJS](https://nextjs.org/docs/)
-
-## TODO: 
-Recap in Notion.so     
-https://www.notion.so/f1dc16688af848a4873e4cea449a4a94?v=b9fb86f6b0ed475fbcc991889da68211     
-- [ ] Permissions on API (Admin, User)       
-FirebaseUsers:PATCH - verify token from Stripe
-
 ## Stack
 
 **Front-end:**
 - Framework: `NextJS`     
-・Vercel App: https://paname.io 
-・Lighthouse: https://vercel.com/azerpas/paname-next/integrations/icfg_bljGHkCMcnKxkFX2Jxugkqjr
+- Vercel App: https://paname.io 
+- Lighthouse
 - UI: `Material UI` and `styled-components`    
 - State management: `useState`      
 - Payment: `Stripe`     
 - `apollo-client`
+- Error tracking: `Sentry.io`
 
 **API:**
-・API Platform: https://api.paname.io
+- `Symfony 5`
 - `graphql`  
 - `apollo-server`      
 - `api-platform`
