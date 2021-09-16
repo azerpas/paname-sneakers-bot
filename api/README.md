@@ -1,17 +1,32 @@
 # API
 
-The API will be here.
+This API has been created with [API Platform](https://api-platform.com/), check out their [documentation](https://api-platform.com/docs/distribution) for specific customization.
 
-Refer to the [Getting Started Guide](https://api-platform.com/docs/distribution) for more information.
+## Features
+- Docker Compose support
+- Firebase Auth support
+- Role-based restrictions
+- Stripe support
 
-## Test data setup
-- Navigate to the main folder (same as README.md)
-- Connect to the database
+## Installation
+### Requirements
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- Make sure no process is running on port `5432` or `8443`
+### Steps
+- Navigate to this folder
+- In the `./config` folder, replace the service account file by yours or complete it. Rename it to `serv-acc.json`. ([How to get my Service Account file?](https://firebase.google.com/docs/admin/setup#initialize-sdk))
+- In the root folder, complete the `.env` file with your variables
+- `docker-compose up -d`
+- Navigate to `https://localhost:8443`
+#### __Populate the database__
+- Navigate to the root folder (same as `setup.sql`)
+- Modify the values as you wish
+- Connect to the database with `psql` (user, password, and database are configurated inside `.env` file)
 - Run these commands:
-- `\c api`
-- `\i setup.sql`
+    - `\c api` (use `api` database - or whatever your db name is)
+    - `\i setup.sql`
 
-## Post data to API
+## Interact with the API
 ### Introduction
 - API Rest schema can be found here: [API](https://api.paname.io/)
 - GraphQL schema can be found here: [GraphQL](https://api.paname.io/graphql/graphql_playground)       
@@ -20,10 +35,10 @@ Refer to the [Getting Started Guide](https://api-platform.com/docs/distribution)
 ### Auth
 - Authentification is based off Firebase, that's why you need to login through your account on https://paname.io/login first
 - You will need the access token returned. You can find it in the following requests (Network tab in your Browser):      
-#### On login request
+#### __On login request__
 In the login response POST:/api/graphql "accessToken" field, **and not** the "token" field.
 ![accessToken](https://user-images.githubusercontent.com/19282069/107741571-b85c6f00-6d0d-11eb-9c13-4dd8b79e3fb1.png)
-#### On every request made to the API
+#### __On every request made to the API__
 Just scrape what’s after Bearer in the authorization header
 ![authorization](https://user-images.githubusercontent.com/19282069/107741419-6a476b80-6d0d-11eb-831a-e904fd7958c9.png)
 ### Postman 
