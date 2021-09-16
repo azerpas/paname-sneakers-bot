@@ -1,4 +1,14 @@
-# paname-functions
+# bots
+
+Bot tasks are Cloud Functions instances, running on Database trigger through Firestore triggers.
+
+## Installation
+### Requirements
+- [NodeJS](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+- GCP and [Firebase](https://firebase.google.com/) configurated with Functions activated
+### Steps
+Check How-to
 
 ## __How-to__
 ### 💻  Emulate functions locally 

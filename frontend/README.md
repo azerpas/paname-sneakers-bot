@@ -1,4 +1,27 @@
-# Paname-Next
+# Front-end
+
+Front-end created with [NextJS](nextjs.org/), highly modular and ready for production.
+
+## Features
+- TypeScript native support
+- [GraphQL](https://graphql.org/) API support
+- ORM support through [TypeORM](https://typeorm.io/)
+- Authentication handled with [Firebase](https://firebase.google.com/) Auth
+- Support with [Crisp](https://crisp.chat/en/)
+- Error tracking with [sentry.io](https://sentry.io/welcome/)
+- Easy dashboard customization with Material-UI and styled-components
+
+## Installation
+### Requirements
+- [NodeJS](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/getting-started/install)
+- Accounts at [Firebase](https://firebase.google.com/), [sentry.io](https://sentry.io/welcome/), [Stripe](https://stripe.com/), [Crisp](https://crisp.chat/en/)
+- [Database setup](https://github.com/azerpas/paname-sneakers-bot/tree/main/api#readme)
+- [Service Account json file](https://firebase.google.com/docs/admin/setup#initialize-sdk)
+### Steps
+- Set the environment variables (in `.env.example`) with the values acquired above and rename `.env.example` to `.env`
+- `yarn install`
+- `yarn dev`
 
 ## Stack
 
