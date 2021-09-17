@@ -8,8 +8,8 @@ test("TwoCaptcha:sendRequest", async () => {
         sitekey: "6LfG5soZAAAAAExFy9QD-KEWJ1f8reJRDYH5yptQ", 
         url: "https://2captcha.com/demo/recaptcha-v2?level=high", 
         method: METHOD.reCaptcha, 
-        proxy: {ip: "zproxy.lum-superproxy.io", port: 22225, username: "lum-customer-paname-zone-yet-session-23323", password: "xwpn9i1t4inu"}, 
-        apiKey: "12a5755eefb538792514196715f51b63"
+        proxy: {ip: "", port: 22225, username: "", password: ""}, 
+        apiKey: ""
     });
     const reqId = await two.sendRequest();
     expect(typeof reqId).toBe("string");
@@ -20,8 +20,8 @@ test("TwoCaptcha:sendAndGet", async () => {
         sitekey: "6LfG5soZAAAAAExFy9QD-KEWJ1f8reJRDYH5yptQ", 
         url: "https://2captcha.com/demo/recaptcha-v2?level=high", 
         method: METHOD.reCaptcha, 
-        proxy: {ip: "zproxy.lum-superproxy.io", port: 22225, username: "lum-customer-paname-zone-yet-session-23323", password: "xwpn9i1t4inu"}, 
-        apiKey: "12a5755eefb538792514196715f51b63"
+        proxy: {ip: "", port: 22225, username: "", password: ""}, 
+        apiKey: ""
     });
     const reqId = await two.sendRequest();
     const res = await two.getResult(reqId);
